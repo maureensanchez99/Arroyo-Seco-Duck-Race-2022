@@ -17,7 +17,7 @@ int pos;
 
 void setup() {
   servo.attach(3); //attachs the pin the servo is connected to
-  servo.write(90); //sets servo to midpoint
+  servo.write(0); //sets servo to midpoint
   delay(50); //delays the start of the radio module so the servo has time to be connected to module 
   radio.begin(); //starts the radio module
   radio.openReadingPipe(1, address); //opens connections between the radio modules
@@ -29,6 +29,6 @@ void loop() {
     radio.read(msg,1); //if so start recieving messages to perform
   }
   data = msg[0]; 
-  pos = map(data, 0, 126, 7, 67);
+  pos = map(data, 0, 126, 0, 180); //changes values from joystick into values that fit the servo range 
   servo.write(pos);
 }
