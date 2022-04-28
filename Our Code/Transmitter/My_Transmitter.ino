@@ -10,8 +10,20 @@ RF24 radio(9,10);
 
 //constants 
 const uint64_t address = 0xF0F0F0F000LL; //address 
-int msg[1];
+int msg[1]; //message that is being sent to the Aruino receiver 
 int joystick = A1; //where the joystick is connected
+
+int motor1pin1 = 2; //pin connection for motor 1 to go in certain direction
+int motor1pin2 = 3; //pin connection for motor 1 to go in other direction
+
+int motor2pin1 = 4; //pin connection for motor 2 to go in certain direction
+int motor2pin2 = 5; //pin connection for motor 2 to go in other direction
+
+int motor3pin1 = 2; //pin connection for motor 3 to go in certain direction
+int motor3pin2 = 3; //pin connection for motor 3 to go in other direction
+
+int motor4pin1 = 4; //pin connection for motor 4 to go in certain direction
+int motor4pin2 = 5; //pin connection for motor 4 to go in other direction
 
 //changing variables
 int direction; //determines the direction/angle of the rudder 
