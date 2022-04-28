@@ -14,11 +14,18 @@ const uint64_t address = 0xF0F0F0F000LL;
 int msg[1]; 
 int data; 
 int pos;
+const int in1 = 2; // direction pin 1
+const int in2 = 4; // direction pin 2
+   
 
 void setup() {
+  pinMode(in1, OUTPUT); //motor 1
+  pinMode(in2, OUTPUT); //motor 1
+  
   servo.attach(3); //attachs the pin the servo is connected to
   servo.write(0); //sets servo to midpoint
   delay(50); //delays the start of the radio module so the servo has time to be connected to module 
+  
   radio.begin(); //starts the radio module
   radio.openReadingPipe(1, address); //opens connections between the radio modules
   radio.startListening(); //reciever begins waiting for commands from transmitter Arduino
