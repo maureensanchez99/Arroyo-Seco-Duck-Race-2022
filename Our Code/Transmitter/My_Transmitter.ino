@@ -20,8 +20,8 @@ int motor1pin2 = 3; //pin connection for motor 1 to go in other direction
 int motor2pin1 = 4; //pin connection for motor 2 to go in certain direction
 int motor2pin2 = 5; //pin connection for motor 2 to go in other direction
 
-int motor3pin1 = 2; //pin connection for motor 3 to go in certain direction
-int motor3pin2 = 3; //pin connection for motor 3 to go in other direction
+//int motor3pin1 = 2; //pin connection for motor 3 to go in certain direction
+//int motor3pin2 = 3; //pin connection for motor 3 to go in other direction
 
 //int motor4pin1 = 4; //pin connection for motor 4 to go in certain direction
 //int motor4pin2 = 5; //pin connection for motor 4 to go in other direction
