@@ -43,7 +43,7 @@ void setup() {
   pinMode(L1in4, OUTPUT); //motor 2
   pinMode(L1enb, OUTPUT); //motor 2
   
-  servo.attach(9); //attachs the pin the servo is connected to
+  servo.attach(3); //attachs the pin the servo is connected to
   servo.write(0); //sets servo to midpoint
   delay(50); //delays the start of the radio module so the servo has time to be connected to module 
   
@@ -61,12 +61,12 @@ void loop() {
   servo.write(pos);
   
   //controlling speed of motors
-  analogWrite(5, speed); //sets motor speed to 75% potential
-  analogWrite(6, speed); //sets motor speed to 75% potential
+  analogWrite(L1ena, speed); //sets motor speed to 75% potential
+  analogWrite(L1enb, speed); //sets motor speed to 75% potential
   
   //setting direction of motors
   digitalWrite(L1in1, HIGH);
   digitalWrite(L1in2, LOW);
   digitalWrite(L1in3, HIGH);
-  digitalWrite(L1in4, LOW); 
+  digitalWrite(L1in4, LOW);
 }
