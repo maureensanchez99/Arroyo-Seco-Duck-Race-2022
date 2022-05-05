@@ -1,5 +1,5 @@
 # Arroyo Seco Duck Race 2022  
-
+![Testing the duck in the river](https://github.com/maureensanchez99/Arroyo-Seco-Duck-Race-2022/blob/main/images/testing%20duck%20in%20river.jpg)  
 This code is used to power our duck created for the Arroyo Seco Duck Race 2022.  
 ## Purpose    
 Students will follow the engineering design cycle to design, construct, prototype, test, and compete enhanced large floating ducks to go the fastest up and down a stretch of river at the Arroyo Seco Unlimited Engineering Duck Race remote control of the ducks.  
